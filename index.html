@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/body.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <div class="line" id="active"></div>
+        </label>
+        <label class="logo">DesignX</label>
+        <ul>
+            <li><a class="active" href="https://raihan2000.github.io">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <div class="flex-img">
+            <img src="/images/code.jpg" alt="">
+        </div>
+        <p id="greet">Hi,Everyone I'm</p>
+        <p id="name">Raihan Ahamed</p>
+        <p id="skills">Self-Taught Programmer | Linux Enthusiast</p>
+        <p id="myself">I love to play with code everyday.I like to build new thing and learn new things.</p>
+    </div>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop()) {
+                $('nav').addClass('sticky')
+            } else {
+                $('nav').removeClass('sticky')
+            }
+        });
+    </script>
+</body>
+
+</html>
