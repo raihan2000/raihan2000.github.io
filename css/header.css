@@ -1,7 +1,9 @@
-@import 'https://fonts.googleapis.com/css?family=Baloo+Paaji';
-*,
-*:before,
-*:after {
+@font-face {
+    font-family: 'Baloo paaji';
+    src: local('Baloo paaji'), url('/font/BalooPaaji.woff') format('woff');
+}
+
+* {
     padding: 0;
     margin: 0;
 }
