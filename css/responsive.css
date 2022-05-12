@@ -46,7 +46,16 @@
 }
 
 
-/* verticle responsive */
+/* Responsive footer */
+
+@media only screen and (min-width: 640px) {
+    .footer-row {
+        display: flex;
+    }
+}
+
+
+/* verticle hesder responsive */
 
 @media (max-width: 640px) {
     label.logo {
@@ -55,5 +64,23 @@
     }
     .navi li a {
         font-size: 16px;
+    }
+    .footer .col-social {
+        text-align: center;
+    }
+    .footer .col-social label {
+        margin-left: 15px;
+    }
+    .footer .soc {
+        display: block;
+        font-size: 0;
+        list-style: none;
+        text-align: center;
+    }
+    .footer .col-about {
+        text-align: center;
+    }
+    .footer .col-about .logo {
+        margin-right: 10px;
     }
 }

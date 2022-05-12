@@ -1,0 +1,33 @@
+/* Layout: */
+
+.col-about {
+    flex: 1;
+    color: white;
+}
+
+.col-social {
+    flex: 1;
+    color: white;
+    text-align: right;
+}
+
+.col-social label {
+    margin-right: 22px;
+    font-weight: bold;
+}
+
+.col-about .logo {
+    padding: 0;
+}
+
+.col-about p {
+    font-size: 15px;
+}
+
+.footer {
+    background: black;
+}
+
+.col {
+    padding: 10px;
+}
