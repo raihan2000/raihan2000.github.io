@@ -1,0 +1,68 @@
+.banner .soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.banner .soc li {
+    display: inline-block;
+    margin-inline: 5px;
+    margin-bottom: 10px;
+}
+
+.soc a,
+.soc svg {
+    display: block;
+    height: 40px;
+    width: 40px;
+    transform: scale(0.8);
+}
+
+.icon-1 {
+    border-radius: 100%;
+    background: #aaa;
+}
+
+.icon-1:hover {
+    background: #2c3e50;
+}
+
+.icon-1:hover {
+    border-radius: 100%;
+    fill: white;
+    transform: scale(1.2);
+    transition: background-color 0.5s, transform 0.5s ease-out;
+}
+
+.icon-2 {
+    border-radius: 100%;
+    background: #aaa;
+}
+
+.icon-2:hover {
+    background: #2c3e50;
+}
+
+.icon-2:hover {
+    border-radius: 100%;
+    fill: white;
+    transform: scale(1.2);
+    transition: background-color 0.5s, transform 0.5s ease-out;
+}
+
+.icon-3 {
+    border-radius: 100%;
+    background: #aaa;
+}
+
+.icon-3:hover {
+    background: #2c3e50;
+}
+
+.icon-3:hover {
+    border-radius: 100%;
+    fill: white;
+    transform: scale(1.2);
+    transition: background-color 0.5s, transform 0.5s ease-out;
+}

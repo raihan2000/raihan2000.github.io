@@ -31,19 +31,19 @@ label.logo {
     font-weight: bold;
 }
 
-nav ul {
+nav .navi {
     float: right;
     margin-right: 5px;
 }
 
-ul li {
+.navi li {
     display: inline-block;
     list-style: none;
     line-height: 60px;
     margin: 0 5px;
 }
 
-ul li a {
+.navi li a {
     color: white;
     text-decoration: none;
     font-size: 15px;
@@ -52,8 +52,8 @@ ul li a {
     text-transform: uppercase;
 }
 
-a.active,
-a:hover {
+.navi a.active,
+.navi a:hover {
     background: #1b9bff;
     transition: .5s;
 }
