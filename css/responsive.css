@@ -1,12 +1,9 @@
 /* hamburger menu setup responsive horizontal */
 
-@media (max-width: 882px) {
+@media screen and (max-width: 882px) {
     .checkbtn {
         display: block;
         padding: 25px 30px;
-    }
-    label.logo {
-        line-height: 60px;
     }
     .navi {
         position: fixed;
@@ -37,18 +34,38 @@
     #check:checked~ul {
         left: 0;
     }
-    .banner {
-        margin: 40px 20px;
+    .flex-img {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
     }
-    .intro {
-        margin: 40px 20px;
+    .col-banner {
+        flex: 50%;
+    }
+    .row-banner p {
+        text-align: center;
+    }
+    .row-banner .soc {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .col-project {
+        flex: 25%;
+    }
+}
+
+@media (min-width:640px) and (max-width:800px) {
+    .col-project {
+        flex: 30%;
     }
 }
 
 
 /* Responsive footer */
 
-@media only screen and (min-width: 640px) {
+@media screen and (min-width: 640px) {
     .footer-row {
         display: flex;
     }
@@ -57,11 +74,7 @@
 
 /* verticle hesder responsive */
 
-@media (max-width: 640px) {
-    label.logo {
-        font-size: 30px;
-        padding: 0 35px;
-    }
+@media screen and (max-width: 640px) {
     .navi li a {
         font-size: 16px;
     }
@@ -82,5 +95,8 @@
     }
     .footer .col-about .logo {
         margin-right: 10px;
+    }
+    .col-project {
+        flex: 50%;
     }
 }

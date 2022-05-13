@@ -1,55 +1,51 @@
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
 .banner {
-    margin: 40px 200px;
+    margin: 40px 20px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.banner img {
+.row-banner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-banner {
+    flex: 40%;
+    padding: 20px;
+}
+
+.row-banner img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-p {
+.row-banner p {
     color: white;
 }
 
 .flex-img {
-    padding-top: 10px;
-    padding-bottom: 5px;
-    display: flex;
-    justify-content: center;
+    padding: 5% 5% 0;
 }
 
-#greet {
+.banner #greet {
     padding-top: 5px;
     font-size: 20px;
-    text-align: center;
 }
 
-#name {
+.banner #name {
     font-size: 35px;
     font-weight: bold;
-    text-align: center;
     padding-top: 15px;
 }
 
-#skills {
+.banner #skills {
     font-size: 25px;
     font-weight: bold;
-    text-align: center;
     padding-top: 20px;
 }
 
-#myself {
-    text-align: center;
+.banner #myself {
     padding-top: 15px;
     padding-bottom: 15px;
-}
-
-section {
-    height: 100vh;
 }

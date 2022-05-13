@@ -2,25 +2,27 @@
 
 .col-about {
     flex: 1;
-    color: white;
+}
+
+.col-about .logo,
+.col-about svg {
+    display: inline-block;
 }
 
 .col-social {
     flex: 1;
-    color: white;
     text-align: right;
+    bottom: 0;
 }
 
 .col-social label {
+    color: #fff;
     margin-right: 22px;
     font-weight: bold;
 }
 
-.col-about .logo {
-    padding: 0;
-}
-
 .col-about p {
+    color: #fff;
     font-size: 15px;
 }
 
@@ -28,6 +30,16 @@
     background: black;
 }
 
-.col {
+.footer .col {
     padding: 10px;
+}
+
+footer .copyright label {
+    color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+footer .copyright .author {
+    float: right;
 }

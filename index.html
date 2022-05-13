@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio and Blog</title>
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/stick.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/stick.js"></script>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -21,62 +22,139 @@
         <label for="check" class="checkbtn">
             <div class="line" id="active"></div>
         </label>
-        <label class="logo">RAIHAN</label>
+        <a class="logo" href="index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="147.000000pt" height="55.000000pt" viewBox="0 0 147.000000 55.000000" preserveAspectRatio="xMidYMid meet">
+            <g id="logo" transform="translate(0.000000,55.000000) scale(0.100000,-0.100000)">
+                <path d="M138 389 c-15 -8 -18 -25 -18 -102 0 -99 7 -117 47 -117 20 0 23 5
+            23 35 0 44 9 44 38 0 23 -37 51 -45 72 -20 9 11 8 20 -8 42 -18 25 -18 31 -6
+            48 23 32 18 81 -12 104 -29 23 -105 28 -136 10z m92 -69 c0 -13 -7 -20 -20
+            -20 -13 0 -20 7 -20 20 0 13 7 20 20 20 13 0 20 -7 20 -20z" />
+                <path d="M408 393 c-19 -5 -83 -186 -74 -210 3 -7 19 -13 36 -13 23 0 30 4 30
+            20 0 16 7 20 34 20 25 0 35 -5 39 -20 4 -15 14 -20 36 -20 38 0 38 2 5 115
+            -31 108 -46 124 -106 108z m42 -110 c0 -7 -7 -13 -16 -13 -11 0 -14 5 -10 16
+            3 9 6 21 6 27 0 16 20 -14 20 -30z" />
+                <path d="M577 393 c-4 -3 -7 -50 -7 -103 0 -102 7 -120 47 -120 23 0 23 2 23
+            109 0 90 -3 110 -16 115 -20 8 -39 8 -47 -1z" />
+                <path d="M694 387 c-2 -7 -3 -58 -2 -113 l3 -99 30 0 c28 0 30 3 33 43 3 39 5
+            42 32 42 27 0 29 -3 32 -42 3 -39 6 -43 31 -46 l27 -3 0 110 c0 101 -2 110
+            -20 116 -29 9 -40 -2 -40 -41 0 -31 -2 -34 -30 -34 -26 0 -30 4 -30 28 0 15
+            -5 33 -12 40 -16 16 -47 15 -54 -1z" />
+                <path d="M989 393 c-17 -4 -84 -198 -73 -214 3 -5 18 -9 33 -9 20 0 30 6 34
+            20 4 14 14 20 35 20 21 0 31 -6 35 -20 4 -15 14 -20 36 -20 39 0 39 9 7 120
+            -30 101 -48 119 -107 103z m41 -103 c0 -11 -6 -20 -14 -20 -9 0 -12 7 -9 20 3
+            11 9 20 14 20 5 0 9 -9 9 -20z" />
+                <path d="M1172 392 c-9 -6 -12 -36 -10 -113 l3 -104 28 -3 c27 -3 27 -3 28 55
+            l0 58 27 -53 c26 -53 54 -71 87 -58 12 4 15 26 15 110 0 96 -2 105 -20 111
+            -32 10 -40 -3 -40 -63 l0 -57 -24 52 c-29 62 -62 85 -94 65z" />
+            </g>
+            </svg>
+        </a>
         <ul class="navi">
             <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
             <li><a href="#">Portfolio</a></li>
+            <li><a href="/blog/blog.html">Blog</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <div class="banner">
-        <div class="flex-img">
-            <img src="/images/code.jpg" alt="">
-        </div>
-        <p id="greet">Hi,Everyone I'm</p>
-        <p id="name">Raihan Ahamed</p>
-        <p id="skills">Self-Taught Programmer | Linux Enthusiast</p>
-        <p id="myself">I love to play with code everyday.I like to build new thing and learn new things.</p>
-        <ul class="soc">
-            <li>
-                <a class="icon-1 github" href="https://github.com/raihan2000" target="_blank">
-                    <div class="ir">
-                        <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
+        <div class="row-banner">
+            <div class="col-banner flex-img">
+                <img src="/images/code.jpg" alt="code logo">
+            </div>
+            <div class="col-banner info">
+                <p id="greet">Hi,Everyone I'm</p>
+                <p id="name">Raihan Ahamed</p>
+                <p id="skills">Self-Taught Programmer | Linux Enthusiast</p>
+                <p id="myself">I love to play with code everyday.I like to build new thing and learn new things.</p>
+                <ul class="soc">
+                    <li>
+                        <a class="icon-1 github" href="https://github.com/raihan2000" target="_blank">
+                            <div class="ir">
+                                <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
                             <path d="M256 70.7c-102.6 0-185.9 83.2-185.9 185.9 0 82.1 53.3 151.8 127.1 176.4 9.3 1.7 12.3-4 12.3-8.9V389.4c-51.7 11.3-62.5-21.9-62.5-21.9 -8.4-21.5-20.6-27.2-20.6-27.2 -16.9-11.5 1.3-11.3 1.3-11.3 18.7 1.3 28.5 19.2 28.5 19.2 16.6 28.4 43.5 20.2 54.1 15.4 1.7-12 6.5-20.2 11.8-24.9 -41.3-4.7-84.7-20.6-84.7-91.9 0-20.3 7.3-36.9 19.2-49.9 -1.9-4.7-8.3-23.6 1.8-49.2 0 0 15.6-5 51.1 19.1 14.8-4.1 30.7-6.2 46.5-6.3 15.8 0.1 31.7 2.1 46.6 6.3 35.5-24 51.1-19.1 51.1-19.1 10.1 25.6 3.8 44.5 1.8 49.2 11.9 13 19.1 29.6 19.1 49.9 0 71.4-43.5 87.1-84.9 91.7 6.7 5.8 12.8 17.1 12.8 34.4 0 24.9 0 44.9 0 51 0 4.9 3 10.7 12.4 8.9 73.8-24.6 127-94.3 127-176.4C441.9 153.9 358.6 70.7 256 70.7z"></path>
                           </svg>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="icon-2 facebook" href="https://www.facebook.com/raihan.ahamed.568632" target="_blank">
-                    <div class="ir">
-                        <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon-2 facebook" href="https://www.facebook.com/raihan.ahamed.568632" target="_blank">
+                            <div class="ir">
+                                <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
                             <path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"></path>
                           </svg>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="icon-3 insta" href="#" target="_blank">
-                    <div class="ir">
-                        <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="icon-3 insta" href="#" target="_blank">
+                            <div class="ir">
+                                <svg viewbox="0 0 512 512" preserveAspectRatio="xMidYMid meet" width="512" height="512">
                             <path d="M256 109.3c47.8 0 53.4 0.2 72.3 1 17.4 0.8 26.9 3.7 33.2 6.2 8.4 3.2 14.3 7.1 20.6 13.4 6.3 6.3 10.1 12.2 13.4 20.6 2.5 6.3 5.4 15.8 6.2 33.2 0.9 18.9 1 24.5 1 72.3s-0.2 53.4-1 72.3c-0.8 17.4-3.7 26.9-6.2 33.2 -3.2 8.4-7.1 14.3-13.4 20.6 -6.3 6.3-12.2 10.1-20.6 13.4 -6.3 2.5-15.8 5.4-33.2 6.2 -18.9 0.9-24.5 1-72.3 1s-53.4-0.2-72.3-1c-17.4-0.8-26.9-3.7-33.2-6.2 -8.4-3.2-14.3-7.1-20.6-13.4 -6.3-6.3-10.1-12.2-13.4-20.6 -2.5-6.3-5.4-15.8-6.2-33.2 -0.9-18.9-1-24.5-1-72.3s0.2-53.4 1-72.3c0.8-17.4 3.7-26.9 6.2-33.2 3.2-8.4 7.1-14.3 13.4-20.6 6.3-6.3 12.2-10.1 20.6-13.4 6.3-2.5 15.8-5.4 33.2-6.2C202.6 109.5 208.2 109.3 256 109.3M256 77.1c-48.6 0-54.7 0.2-73.8 1.1 -19 0.9-32.1 3.9-43.4 8.3 -11.8 4.6-21.7 10.7-31.7 20.6 -9.9 9.9-16.1 19.9-20.6 31.7 -4.4 11.4-7.4 24.4-8.3 43.4 -0.9 19.1-1.1 25.2-1.1 73.8 0 48.6 0.2 54.7 1.1 73.8 0.9 19 3.9 32.1 8.3 43.4 4.6 11.8 10.7 21.7 20.6 31.7 9.9 9.9 19.9 16.1 31.7 20.6 11.4 4.4 24.4 7.4 43.4 8.3 19.1 0.9 25.2 1.1 73.8 1.1s54.7-0.2 73.8-1.1c19-0.9 32.1-3.9 43.4-8.3 11.8-4.6 21.7-10.7 31.7-20.6 9.9-9.9 16.1-19.9 20.6-31.7 4.4-11.4 7.4-24.4 8.3-43.4 0.9-19.1 1.1-25.2 1.1-73.8s-0.2-54.7-1.1-73.8c-0.9-19-3.9-32.1-8.3-43.4 -4.6-11.8-10.7-21.7-20.6-31.7 -9.9-9.9-19.9-16.1-31.7-20.6 -11.4-4.4-24.4-7.4-43.4-8.3C310.7 77.3 304.6 77.1 256 77.1L256 77.1z"></path>
                             <path d="M256 164.1c-50.7 0-91.9 41.1-91.9 91.9s41.1 91.9 91.9 91.9 91.9-41.1 91.9-91.9S306.7 164.1 256 164.1zM256 315.6c-32.9 0-59.6-26.7-59.6-59.6s26.7-59.6 59.6-59.6 59.6 26.7 59.6 59.6S288.9 315.6 256 315.6z"></path>
                             <circle cx="351.5" cy="160.5" r="21.5"></circle>
                           </svg>
-                    </div>
-                </a>
-            </li>
-        </ul>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <p id="top">My Projects</p>
+        <div class="row-project">
+            <div class="col-project">
+                <img src="/images/code.jpg" alt="">
+                <p>Some text..</p>
+            </div>
+            <div class="col-project">
+                <img src="/images/code.jpg" alt="">
+                <p>Some text..</p>
+            </div>
+            <div class="col-project">
+                <img src="/images/code.jpg" alt="">
+                <p>Some text..</p>
+            </div>
+            <div class="col-project">
+                <img src="/images/code.jpg" alt="">
+                <p>Some text..</p>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="footer">
             <div class="footer-row">
                 <div class="col col-about">
-                    <label class="logo">RAIHAN</lab<el>
-                        <p>Never stop learning,keep learning and shine time to time</p>
+                    <a class="logo" href="index.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="147.000000pt" height="55.000000pt" viewBox="0 0 147.000000 55.000000" preserveAspectRatio="xMidYMid meet">
+                        <g id="logo" transform="translate(0.000000,55.000000) scale(0.100000,-0.100000)">
+                            <path d="M138 389 c-15 -8 -18 -25 -18 -102 0 -99 7 -117 47 -117 20 0 23 5
+                        23 35 0 44 9 44 38 0 23 -37 51 -45 72 -20 9 11 8 20 -8 42 -18 25 -18 31 -6
+                        48 23 32 18 81 -12 104 -29 23 -105 28 -136 10z m92 -69 c0 -13 -7 -20 -20
+                        -20 -13 0 -20 7 -20 20 0 13 7 20 20 20 13 0 20 -7 20 -20z" />
+                            <path d="M408 393 c-19 -5 -83 -186 -74 -210 3 -7 19 -13 36 -13 23 0 30 4 30
+                        20 0 16 7 20 34 20 25 0 35 -5 39 -20 4 -15 14 -20 36 -20 38 0 38 2 5 115
+                        -31 108 -46 124 -106 108z m42 -110 c0 -7 -7 -13 -16 -13 -11 0 -14 5 -10 16
+                        3 9 6 21 6 27 0 16 20 -14 20 -30z" />
+                            <path d="M577 393 c-4 -3 -7 -50 -7 -103 0 -102 7 -120 47 -120 23 0 23 2 23
+                        109 0 90 -3 110 -16 115 -20 8 -39 8 -47 -1z" />
+                            <path d="M694 387 c-2 -7 -3 -58 -2 -113 l3 -99 30 0 c28 0 30 3 33 43 3 39 5
+                        42 32 42 27 0 29 -3 32 -42 3 -39 6 -43 31 -46 l27 -3 0 110 c0 101 -2 110
+                        -20 116 -29 9 -40 -2 -40 -41 0 -31 -2 -34 -30 -34 -26 0 -30 4 -30 28 0 15
+                        -5 33 -12 40 -16 16 -47 15 -54 -1z" />
+                            <path d="M989 393 c-17 -4 -84 -198 -73 -214 3 -5 18 -9 33 -9 20 0 30 6 34
+                        20 4 14 14 20 35 20 21 0 31 -6 35 -20 4 -15 14 -20 36 -20 39 0 39 9 7 120
+                        -30 101 -48 119 -107 103z m41 -103 c0 -11 -6 -20 -14 -20 -9 0 -12 7 -9 20 3
+                        11 9 20 14 20 5 0 9 -9 9 -20z" />
+                            <path d="M1172 392 c-9 -6 -12 -36 -10 -113 l3 -104 28 -3 c27 -3 27 -3 28 55
+                        l0 58 27 -53 c26 -53 54 -71 87 -58 12 4 15 26 15 110 0 96 -2 105 -20 111
+                        -32 10 -40 -3 -40 -63 l0 -57 -24 52 c-29 62 -62 85 -94 65z" />
+                        </g>
+                        </svg>
+                    </a>
+                    <p>Development is like puzzle game of tons of features, just you have to arrange them according to your needs</p>
                 </div>
-                <div class="col col-social" role="complementary">
+                <div class="col col-social">
                     <label>Follow Me Here</label>
                     <ul class="soc">
                         <li>
@@ -111,6 +189,11 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="copyright">
+            <label>RAIHAN &copy2022</label>
+            <label class="author">Developed by: Raihan Ahamed</label>
+        </div>
     </footer>
 </body>
 

@@ -1,0 +1,29 @@
+.project {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin: 0 20px 40px;
+}
+
+.project #top {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.row-project {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Create four equal columns */
+
+.col-project {
+    flex: 20%;
+    padding: 20px;
+}
+
+.col-project img {
+    width: 100%;
+}
