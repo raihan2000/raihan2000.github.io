@@ -5,13 +5,8 @@
 }
 
 .row-banner {
-    display: flex;
+    text-align: center;
     flex-wrap: wrap;
-}
-
-.col-banner {
-    flex: 40%;
-    padding: 20px;
 }
 
 .row-banner img {
@@ -22,6 +17,15 @@
 
 .row-banner p {
     color: white;
+}
+
+.col-banner {
+    flex: 40%;
+    padding: 20px;
+}
+
+.row-banner .info .soc {
+    text-align: center;
 }
 
 .flex-img {

@@ -18,14 +18,17 @@ body {
 
 nav {
     position: relative;
-    height: 60px;
+    height: 70px;
     width: 100%;
+    z-index: 1;
 }
 
 nav .logo,
 nav svg {
-    display: inline-block;
-    height: 60px;
+    height: 50px;
+    width: 120px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .logo {
@@ -37,29 +40,29 @@ nav svg {
     transform: 0.5s;
 }
 
+
+/* navigation */
+
 nav .navi {
-    float: right;
-    margin-right: 5px;
+    display: none;
+    background: black;
+    text-align: center;
 }
 
 .navi li {
-    display: inline-block;
+    height: 40px;
     list-style: none;
-    line-height: 60px;
-    margin: 0 5px;
 }
 
 .navi li a {
     color: white;
     text-decoration: none;
-    font-size: 15px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
+    padding: 0 10px;
 }
 
-.navi a.active,
-.navi a:hover {
+.navi a:hover,
+.navi a.active {
+    border-radius: 3px;
     background: #1b9bff;
     transition: .5s;
 }
@@ -73,65 +76,69 @@ nav .navi {
     top: 0;
     left: 0;
     width: 100%;
-    height: 60px;
-    z-index: 1;
+    height: 70px;
     transition: .9s;
 }
 
-.checkbtn {
-    float: right;
-    margin-right: 40px;
-    padding: 35px 30px;
-    display: none;
-}
 
-#check {
-    display: none;
-}
+/* hamburger menu */
 
-
-/* creating animated menu */
-
-.line {
-    position: absolute;
+ul.hamburger li {
+    list-style: none;
     height: 5px;
-    width: 30px;
-    cursor: pointer;
-    display: block;
-    background-color: white;
-    transition: .4s ease;
+    background: #fff;
+    content: "";
+    position: relative;
+    transition: 0.25s ease-in-out;
 }
 
-.line::before {
-    content: '';
-    position: absolute;
-    height: 5px;
-    width: 30px;
-    background-color: white;
-    top: -8px;
-    transition: .4s ease;
+.hidden {
+    opacity: 0;
 }
 
-.line::after {
-    content: '';
-    position: absolute;
-    height: 5px;
-    width: 30px;
-    background-color: white;
-    top: 8px;
-}
-
-#check:checked+label #active {
+.rot45deg {
     transform: rotate(45deg);
+    top: 10px !important;
 }
 
-#check:checked+label #active::before {
-    transform: rotate(-90deg) translateX(-8px);
+.rot-45deg {
+    transform: rotate(-45deg);
 }
 
-#check:checked+label #active::after {
+ul.hamburger {
+    display: block;
+}
+
+ul.hamburger li:nth-child(1) {
+    top: 0;
+}
+
+ul.hamburger li:nth-child(2) {
+    top: 5px;
+}
+
+ul.hamburger li:nth-child(3) {
+    top: 10px;
+}
+
+.hamburger-container {
+    width: 38px;
+    margin: 1.2em 1.6em;
+    height: 30px;
+    cursor: pointer;
+    float: right;
+}
+
+
+/* click out-side to close menu */
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
     display: none;
 }
 
-
-/* done animated menu */
+.overlay.open {
+    display: block
+}

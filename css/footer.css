@@ -6,7 +6,8 @@
 
 .col-about .logo,
 .col-about svg {
-    display: inline-block;
+    height: 30px;
+    width: 120px;
 }
 
 .col-social {
