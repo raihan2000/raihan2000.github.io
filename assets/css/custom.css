@@ -1,0 +1,17 @@
+body.colorscheme-dark {
+  background-color: #2C3E50;
+}
+
+@media only screen and (max-width: 768px) {
+  body.colorscheme-dark .navigation .navigation-list {
+    background-color: #2C3E50;
+    border-top: solid 2px #dadada;
+    border-bottom: solid 2px #dadada;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.colorscheme-dark .navigation #menu-toggle:checked + label > i {
+    color: #dadada;
+  }
+}
