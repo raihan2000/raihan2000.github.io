@@ -5,7 +5,8 @@ theme = 'hugo-coder'
 languagecode = "en"
 defaultcontentlanguage = "en"
 
-paginate = 20
+[pagination]
+pagerSize = 20
 
 [services]
 [services.disqus]
@@ -72,8 +73,12 @@ style = "github-dark"
 [[menu.main]]
   name = "Blog"
   weight = 1
-  url  = "posts/"
+  url = "posts/"
+[[menu.main]]
+  name = "Projects"
+  weight = 2
+  url = "projects/"
 [[menu.main]]
   name = "Donate"
-  weight = 2
+  weight = 3
   url = "donate"
